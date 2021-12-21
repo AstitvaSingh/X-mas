@@ -1,0 +1,127 @@
+body {
+    background-color: black;
+    font-family: cursive;
+}
+  
+.glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+.p1 {
+    font-size: 20px;
+    color: #fff;
+    width: fit-content;
+    -webkit-animation: pglow 1s ease-in-out infinite alternate;
+    -moz-animation: pglow 1s ease-in-out infinite alternate;
+    animation: pglow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000, 0 0 80px #ff0000;
+    }
+}
+@-webkit-keyframes hglow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 2px #fff, 0 0 3px #ff0000, 0 0 10px #ff0000, 0 0 5px #ff0000, 0 0 6px #ff0000, 0 0 7px #ff0000;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 3px #ff0000, 0 0 10px #ff0000, 0 0 5px #ff0000, 0 0 6px #ff0000, 0 0 7px #ff0000, 0 0 8px #ff0000;
+    }
+}
+@-webkit-keyframes pglow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 2px #fff, 0 0 3px #ff0000, 0 0 10px #ff0000, 0 0 5px #ff0000, 0 0 6px #ff0000, 0 0 7px #ff0000;
+    }
+      
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 3px #ff0000, 0 0 10px #ff0000, 0 0 5px #ff0000, 0 0 6px #ff0000, 0 0 7px #ff0000, 0 0 8px #ff0000;
+    }
+}
+.slider{
+    width: 800px;
+    height: 368px;
+    margin: 100px;
+    animation: slide 20s infinite;
+}
+@keyframes slide{
+    0%{
+        background: url(/assests/images/1.png) 800px 368px;
+    }
+    25%{
+        background: url(/assests/images/2.png) 800px 368px;
+    }
+    50%{
+        background: url(/assests/images/3.png) 800px 368px;
+    }
+    75%{
+        background: url(/assests/images/4.png) 800px 368px;
+    }
+    100%{
+        background: url(/assests/images/5.png) 800px 368px;
+    }
+
+}
+
+#video1:hover{
+    height: 500px;
+    width: 1000px;
+}
+#video2:hover{
+    height: 500px;
+    width: 1000px;
+}
+#video3:hover{
+    height: 500px;
+    width: 1000px;
+}
+#video4:hover{
+    height: 500px;
+    width: 1000px;
+}
+#video5:hover{
+    height: 500px;
+    width: 1000px;
+}
+#video6:hover{
+    height: 500px;
+    width: 1000px;
+}
+#video7:hover{
+    height: 500px;
+    width: 1000px;
+}
+@media screen and (max-width: 956px){
+    .slider{
+        width: 100%;
+    }
+    #video1{
+        width: 100%;
+    }
+    #video2{
+        width: 100%;
+    }
+    #video3{
+        width: 100%;
+    }
+    #video4{
+        width: 100%;
+    }
+    #video5{
+        width: 100%;
+    }
+    #video6{
+        width: 100%;
+    }
+    #video7{
+        width: 100%;
+    }
+}
